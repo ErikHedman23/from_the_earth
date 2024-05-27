@@ -34,7 +34,7 @@ fn main() {
         }
     };
 
-    //collect is an iterator, and we are turning it into a vector of string slices.
+    //split_whitespace returns an iterator, so  we use the collect method to turn the content into a Vector of string slices.
     let all_words = _content.split_whitespace().collect::<Vec<&str>>();
 
     let mut word_counts: HashMap<&str, u32> = HashMap::new();
